@@ -1,4 +1,5 @@
 # zoosta
+
   ## Description
 
     The purpose of "zoosta" is to give users a genuine unbiased review along with an "insiders" guide to hidden gems other users may have discovered on a vacation to a foreign city, and for a user to upload memories via photos or a blog themselves related to their get-away adventure. zoosta provides an opportunity to reflect on your experiences, remember them in more detail, and share them with others who may not have been able to join you on your trip. 
