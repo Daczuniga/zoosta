@@ -39,7 +39,7 @@
 
 Daniel Cruz - DACZuniga - danielcruz.34776@gmail.com - https://github.com/Daczuniga
 
-Aya Effoua - aeffoua - - https://github.com/aeffoua
+Aya Effoua - aeffoua - Carineeffoua@gmail.com - https://github.com/aeffoua
 
 Enrique Sanchez - - - https://github.com/
 
