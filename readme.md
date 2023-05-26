@@ -1,6 +1,6 @@
 # zoosta
   ## Description
-  
+    The purpose of "zoosta" is to give users a genuine unbiased review along with an "insiders" guide to hidden gems other users may have discovered on a vacation to a foreign city, and for a user to upload memories via photos or a blog themselves related to their get-away adventure. zoosta provides an opportunity to reflect on your experiences, remember them in more detail, and share them with others who may not have been able to join you on your trip. 
 
   ## Table of Contents
   
@@ -9,52 +9,43 @@
   - [License](#license)
   - [Contribution Guidelines](#contributionguidelines)
   - [Tests](#tests)
-  - [User Story](#UserStory)
-  - [Acceptance Criteria](#AcceptanceCriteria)
   - [Contact Me](#contactinfo)
   - [Additional Information](#additional-info)
   
 ## Installation
-  
+    A user will only need to use the deployable link, a programmer will need to download Mongodb, Express, React, Node.js, and JWT Auth.
 
 ## Usage
-  
+    Upon rendering Heroku link, A user shall be allowed to choose from logging in or creating an account via the "sign up" button, If the sign up button is created, the page will react to the press of the button and it will prompt up with login credential questions. once signed in, you will see a feed page, here you will see trending posts and a prompt as to what area youd like to receive the benefits of using an app like zoosta in. A user shall be allowed to click in the top corners and create a post and also view profile information.
  
 ## License
-  MIT
+    MIT
 
 ## ContributionGuidelines
-  
+    Tourists, or anyone who enjoys traveling, and visiting new places.
 
 ## Tests
+    To test, you will need to ensure app is deployable with the provided heroku link and the react program is not constantly rerendering, also everything will need to obviously have a function. App will need to be mobile friendly as well.
   
-
-## UserStory
-  
-
-## AcceptanceCriteria
-  
-
-
 ## ContactInfo
-Developer's contact information: 
+    Developer's contact information: 
 
 Daniel Cruz - DACZuniga - danielcruz.34776@gmail.com - https://github.com/Daczuniga
 
-Aya Effoua - aeffoua - 
+Aya Effoua - aeffoua - - https://github.com/aeffoua
 
-Enrique Sanchez - - 
+Enrique Sanchez - - - https://github.com/
 
-Ohmarx Paniagua - - 
+Ohmarx Paniagua - - - https://github.com/
 
-Tianna Johnson - - 
+Tianna Johnson - - - https://github.com/
 
-Olivia Nitzel - - 
+Olivia Nitzel - Olivianit - olivianitzel@gmail.com - https://github.com/Olivianit
 
 
 ## Additional-Info
-Link to repository - https://github.com/Daczuniga/zoosta
+    Link to repository - https://github.com/Daczuniga/zoosta
 
-Screenshot of application
+    Screenshot of application:
 
 
