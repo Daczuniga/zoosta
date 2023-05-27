@@ -35,19 +35,19 @@
     To test, you will need to ensure app is deployable with the provided heroku link and the react program is not constantly rerendering, also everything will need to obviously have a function. App will need to be mobile friendly as well.
   
 ## ContactInfo
-    Developer's contact information: Name , Github Username , Email , Github Link 
+   Developer's contact information: Name , Email , Github Link 
 
-Daniel Cruz - DACZuniga - danielcruz.34776@gmail.com - https://github.com/Daczuniga
+Daniel Cruz - danielcruz.34776@gmail.com - [DACZuniga](https://github.com/DACZuniga)
 
-Aya Effoua - aeffoua - Carineeffoua@gmail.com - https://github.com/aeffoua
+Aya Effoua - Carineeffoua@gmail.com - [aeffoua](https://github.com/aeffoua)
 
-Enrique Sanchez - - - https://github.com/
+Enrique Sanchez - - []()
 
-Ohmarx Paniagua - - - https://github.com/
+Ohmarx Paniagua - - []()
 
-Tianna Johnson - - - https://github.com/
+Tianna Johnson - - []()
 
-Olivia Nitzel - Olivianit - olivianitzel@gmail.com - https://github.com/Olivianit
+Olivia Nitzel - olivianitzel@gmail.com - [Olivianit](https://github.com/Olivianit)
 
 
 ## Additional-Info
