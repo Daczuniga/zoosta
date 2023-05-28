@@ -43,7 +43,7 @@ Aya Effoua - Carineeffoua@gmail.com - [aeffoua](https://github.com/aeffoua)
 
 Enrique Sanchez - - []()
 
-Ohmarx Paniagua - - []()
+Ohmarx Paniagua - - [Ohmarxp](https://github.com/Ohmarxp)
 
 Tianna Johnson - - []()
 
