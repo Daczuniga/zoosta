@@ -37,21 +37,21 @@
 ## ContactInfo
    Developer's contact information: Name , Email , Github Link 
 
-Daniel Cruz - danielcruz.34776@gmail.com - [DACZuniga](https://github.com/DACZuniga)
+Daniel Cruz - danielcruz.34776@gmail.com - [Daczuniga](https://github.com/DACZuniga)
 
-Aya Effoua - Carineeffoua@gmail.com - [aeffoua](https://github.com/aeffoua)
+Aya Effoua - carineeffoua@gmail.com - [aeffoua](https://github.com/aeffoua)
 
-Enrique Sanchez - - []()
+Tianna Johnson - tiannaj23@gmail.com - [tiannaj23](https://github.com/tiannaj23)
 
-Ohmarx Paniagua - - []()
+Ohmarx Paniagua - marxhop@hotmail.com - [Ohmarxp](https://github.com/Ohmarxp)
 
-Tianna Johnson - - []()
+Enrique Sanchez- esanchez8k@gmail.com - [esanchez8k](https://github.com/esanchez8k)
 
 Olivia Nitzel - olivianitzel@gmail.com - [Olivianit](https://github.com/Olivianit)
 
 
 ## Additional-Info
-    Link to repository - https://github.com/Daczuniga/zoosta
+    Link to Repository - https://github.com/Daczuniga/zoosta
 
     Screenshot of application:
 
