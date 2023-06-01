@@ -48,7 +48,6 @@ Ohmarx Paniagua - marxhop@hotmail.com - [Ohmarxp](https://github.com/Ohmarxp)
 Enrique Sanchez- esanchez8k@gmail.com - [esanchez8k](https://github.com/esanchez8k)
 
 Olivia Nitzel - olivianitzel@gmail.com - [Olivianit](https://github.com/Olivianit)
-a
 
 ## Additional-Info
     Link to Repository - https://github.com/Daczuniga/zoosta
