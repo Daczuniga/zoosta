@@ -18,7 +18,7 @@ margin: 20px;
 font-size: 20px;
 }
 
-toggleButton {
+.toggleButton {
     width: 100%;
     height: 100px;
     display: flex;
@@ -28,12 +28,13 @@ toggleButton {
   
   .toggleButton svg {
     font-size: 50px;
+    margin-bottom: .5em;
   }
   .toggleButton button {
     margin-right: 20px;
     background-color: transparent;
     border: none;
-    color: white;
+    color: rgb(243, 183, 183);
     cursor: pointer;
   }
   
