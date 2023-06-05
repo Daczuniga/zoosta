@@ -25,3 +25,4 @@ const Profile = () => {
 };
 
 export default Profile;
+//how to use mobx or redux to organize the code and separate the page logic 
