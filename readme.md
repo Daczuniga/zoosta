@@ -15,8 +15,9 @@ The purpose of "Zoosta" is to give users a genuine unbiased review along with an
   - [License](#license)
   - [Contribution Guidelines](#contributing)
   - [Tests](#tests)
-  - [Contact Me](#questions)
-  - [Additional Information](#mock-up)
+  - [Questions](#Questions)
+  - [Contact Me](#ContactInfo)
+  - [Mock-up](#Mock-up)
   
 ## Installation
 
@@ -43,19 +44,17 @@ To test, you must ensure the app is deployable with the provided Heroku link and
 ## Questions
 If you have any questions, please use the Developers' contact information below: 
 
-Daniel Cruz - danielcruz.34776@gmail.com - [Daczuniga](https://github.com/DACZuniga)
+## ContactInfo
+   Developer's contact information: Name , Email , Github Account Link 
+
 Daniel Cruz - danielcruz.34776@gmail.com - [Daczuniga](https://github.com/DACZuniga)
 
 Aya Effoua - carineeffoua@gmail.com - [aeffoua](https://github.com/aeffoua)
-Aya Effoua - carineeffoua@gmail.com - [aeffoua](https://github.com/aeffoua)
 
-Tianna Johnson - tiannaj23@gmail.com - [tiannaj23](https://github.com/tiannaj23)
 Tianna Johnson - tiannaj23@gmail.com - [tiannaj23](https://github.com/tiannaj23)
 
 Ohmarx Paniagua - marxhop@hotmail.com - [Ohmarxp](https://github.com/Ohmarxp)
-Ohmarx Paniagua - marxhop@hotmail.com - [Ohmarxp](https://github.com/Ohmarxp)
 
-Enrique Sanchez- esanchez8k@gmail.com - [esanchez8k](https://github.com/esanchez8k)
 Enrique Sanchez- esanchez8k@gmail.com - [esanchez8k](https://github.com/esanchez8k)
 
 Olivia Nitzel - olivianitzel@gmail.com - [Olivianit](https://github.com/Olivianit)
