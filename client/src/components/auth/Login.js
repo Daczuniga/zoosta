@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Login-SignUp.css';
+import './Login-SignUp.css';
 
 export default function LogIn() {
     return (

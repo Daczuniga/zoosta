@@ -1,6 +1,6 @@
 import React from 'react';
-import '../styles/Home.css';
-import Logo from '../assets/zoosta2.png';
+import './Home.css';
+import Logo from '../../assets/zoosta2.png';
 
 function Home() {
     return (

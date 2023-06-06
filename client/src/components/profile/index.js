@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import ProfileHeader from './ProfileHeader';
-import ProfilePosts from './ProfilePosts';
+import ProfileHeader from './profileHeader';
+// import ProfilePosts from './ProfilePosts';
 
 
 const Profile = () => {
-  const [profileData, setProfileData] = useState(null);
+  
 
   useEffect(() => {
     // Fetch the profile data from an API or other data source
@@ -14,12 +14,7 @@ const Profile = () => {
 
   return (
     <div>
-      {profileData && (
-        <>
-          <ProfileHeader name={profileData.name} profilePicture={profileData.profilePicture} />
-          <ProfilePosts posts={profileData.posts} />
-        </>
-      )}
+      <ProfileHeader  />
     </div>
   );
 };
