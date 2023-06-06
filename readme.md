@@ -42,8 +42,6 @@ To test, you must ensure the app is deployable with the provided Heroku link and
   
 ## Questions
 If you have any questions, please use the Developers' contact information below: 
-## ContactInfo
-   Developer's contact information: Name , Email , Github Account Link 
 
 Daniel Cruz - danielcruz.34776@gmail.com - [Daczuniga](https://github.com/DACZuniga)
 Daniel Cruz - danielcruz.34776@gmail.com - [Daczuniga](https://github.com/DACZuniga)
@@ -63,10 +61,7 @@ Enrique Sanchez- esanchez8k@gmail.com - [esanchez8k](https://github.com/esanchez
 Olivia Nitzel - olivianitzel@gmail.com - [Olivianit](https://github.com/Olivianit)
 
 ## Mock-Up
- 
 Screenshots of application:
-## Additional-Info
-    Link to Repository - https://github.com/Daczuniga/zoosta
 
 ![screen shot]()
 ![screen shot]()
