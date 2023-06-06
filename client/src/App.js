@@ -11,9 +11,11 @@ function App() {
         {/* <Navbar/> */}
         <Routes>
           <Route path="/Home" element={<Home/>}/>
+          <Route path="/Google" element={<Google/>}/>
           <Route path="/Login" element={<Login/>}/>
           <Route path="/SignUp" element={<SignUp/>}/>
         </Routes>
+        <Footer/>
       </Router>
    </div>
   );
