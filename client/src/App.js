@@ -3,13 +3,15 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/home/Home';
 import Login from './components/auth/Login';
 import SignUp from './components/auth/SignUp';
-import NavBar from './components/layout/NavBar';
+import Navbar from './components/layout/NavBar';
 import Profile from './components/profile';
+import Footer from "./components/layout/Footer";
+
 function App() {
   return (
    <div className="App">
       <Router>
-        {/* <Navbar/> */}
+        <Navbar/>
         <Routes>
           <Route path="/Home" element={<Home/>}/>
           {/* <Route path="/Google" element={<Google/>}/> */}
@@ -17,7 +19,7 @@ function App() {
           <Route path="/SignUp" element={<SignUp/>}/>
           <Route path="/Profile" element={<Profile/>}/>
         </Routes>
-        {/* <Footer/> */}
+        <Footer/>
       </Router>
    </div>
   );

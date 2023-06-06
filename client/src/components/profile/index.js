@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ProfileHeader from './profileHeader';
+import "./profile.css"
 // import ProfilePosts from './ProfilePosts';
 
 
