@@ -6,6 +6,9 @@ import SignUp from './pages/SignUp';
 import NavBar from './components/NavBar';
 import Post from './pages/Post';
 import Footer from './components/Footer';
+
+
+
 function App() {
   return (
    <div className="App">
