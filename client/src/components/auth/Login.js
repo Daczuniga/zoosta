@@ -7,7 +7,7 @@ export default function LogIn() {
             <h2>Login</h2>
             <input type ='text' placeholder="usarname" />
             <input type ='password' placeholder="password" />
-            <button>Login</button>
+            <button className='button'>Login</button>
         </form>
     )
 }

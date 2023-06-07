@@ -4,6 +4,7 @@ main {
   margin: 0 auto;
   height: 100%;
 }
+
 .Logo {
   display: flex;
   justify-content: center;
@@ -13,20 +14,21 @@ main {
   background-repeat: no-repeat, repeat; */
   /* background-color: blue; */
 }
+
 img {
   width: 500px;
   height: 400px;
 }
 
 .logBar {
-  height: 200px;
+  height: 130px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  gap: 3em;
   /* background-color: red; */
- 
 }
 
 .signup, .login {
@@ -37,7 +39,7 @@ img {
   font-weight: bold;
   font-family: Futura, Tahoma, sans-serif;
   color: #f1798d;
-  padding: 30px;
+  padding: 25px;
   border-radius: 1px 1px;
-  margin-bottom: 1em;
+  /* margin-bottom: 1em; */
 }
