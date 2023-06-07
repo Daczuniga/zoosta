@@ -24,6 +24,10 @@ const ProfileHeader = () => {
           <h2>carine</h2>
           <img className= "profilePicture" src="https://fastly.picsum.photos/id/445/1600/1600.jpg?hmac=iYt8N2Qg_cwPnbOPOwsWcql4g0PKW66W6Gj1rjrvyJY" alt="Profile" />
           {/* Display other user data */}
+          <ul className="list">
+            <li>78 Likes</li>
+            <li>158 Posts</li>
+          </ul>
         </div>
     </div>
   );

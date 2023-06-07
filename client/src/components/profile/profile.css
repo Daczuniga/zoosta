@@ -3,5 +3,10 @@
     aspect-ratio: '1:1';
     height:200px;
     width: 200px;
-    object-fit: ;
+    object-fit:cover ;
+
 }
+.list{
+    
+}
+/* //add profile to navbar */
