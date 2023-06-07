@@ -2,6 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/home/Home';
 import Login from './components/auth/Login';
+import Post from "./components/post/Post"
 import SignUp from './components/auth/SignUp';
 import Navbar from './components/layout/NavBar';
 import Profile from './components/profile';
@@ -18,7 +19,9 @@ function App() {
           <Route path="/Login" element={<Login/>}/>
           <Route path="/SignUp" element={<SignUp/>}/>
           <Route path="/Profile" element={<Profile/>}/>
+          <Route path="/Post" element={<Post/>}/>
         </Routes>
+       
         <Footer/>
       </Router>
    </div>

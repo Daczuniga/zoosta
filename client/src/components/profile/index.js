@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import ProfileHeader from './profileHeader';
+import ProfilePosts from './profilePosts';
 import "./profile.css"
-// import ProfilePosts from './ProfilePosts';
+
+
 
 
 const Profile = () => {
@@ -16,6 +18,7 @@ const Profile = () => {
   return (
     <div>
       <ProfileHeader  />
+      <ProfilePosts />
     </div>
   );
 };
