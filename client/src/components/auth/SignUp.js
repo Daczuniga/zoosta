@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Login-SignUp.css';
+import './Login-SignUp.css';
 
 export default function SignUp() {
     return (
@@ -7,7 +7,7 @@ export default function SignUp() {
             <h2>Sign Up</h2>
             <input type ='text' placeholder="usarname" />
             <input type ='password' placeholder="password" />
-            <button>Sign Up</button>
+            <button className='button'>Sign Up</button>
         </form>
     )
 }
