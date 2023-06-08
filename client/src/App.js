@@ -1,13 +1,12 @@
-import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Login from './pages/Login';
-import SignUp from './pages/SignUp';
-import NavBar from './components/NavBar';
-import Post from './pages/Post';
-import Footer from './components/Footer';
-
-
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./components/home/Home";
+import Login from "./components/auth/Login";
+import Post from "./components/post/Post"
+import SignUp from "./components/auth/SignUp";
+import Navbar from "./components/layout/NavBar";
+import Profile from "./components/profile";
+import Footer from "./components/layout/Footer";
 
 function App() {
   return (
