@@ -1,0 +1,63 @@
+.profilePicture{
+    border-radius: 50%;
+    aspect-ratio: '1:1';
+    height:200px;
+    width: 200px;
+    object-fit:cover ;
+
+}
+.list{
+    display: flex;
+    padding:0.2em;
+    justify-content: center;
+    gap: 2em;
+    align-items: center;
+}
+
+.sb1,
+.sb2,
+.sb3{
+    position: relative;
+    /* background: #ec71de; */
+    border-radius: .4em;
+    width:300px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:white;
+    background: linear-gradient(135deg,#FE6D00,#1384C5) border-box;
+  
+  }
+  
+  .sb1:after,
+  .sb2:after,
+  .sb3:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 20px solid transparent;
+    border-top-color: #00aabb;
+    border-bottom: 0;
+    margin-left: -20px;
+    margin-bottom: -20px;
+    
+  }
+  
+  
+  
+  .singnoutBtn{
+    float: right;
+    padding: 1px;
+    width: 6rem;
+    background-color: #f1c2e3;
+    color: #fff;
+    border: none;
+    border-radius: 9px;
+    transition: background-color 0.3s ease;
+    
+  }
+  
+/* //add profile to navbar */

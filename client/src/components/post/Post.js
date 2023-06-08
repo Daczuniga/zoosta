@@ -1,6 +1,6 @@
 import React from 'react';
-import '../styles/Post.css';
-import Picture from '../assets/zoosta1.png';
+import './Post.css';
+import Picture from '../../assets/zoosta1.png';
 
 
 function Post() {

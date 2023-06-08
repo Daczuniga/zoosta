@@ -1,4 +1,4 @@
-import '../styles/Footer.css'
+import './Footer.css'
 import {Button} from '@material-ui/core'
 
 
