@@ -1,8 +1,8 @@
-.post {
+/* .post {
     display: flex;
     align-items: flex-start;
     margin-bottom: 20px;
-  }
+  } */
   
   .post .bubble {
     background-color: #f2f2f2;
@@ -28,6 +28,8 @@
 
   
   .post {
+    /* display: flex;
+    align-items: flex-start; */
     display:grid;
     grid-template-columns: .5fr .9fr;
     gap:20px;
