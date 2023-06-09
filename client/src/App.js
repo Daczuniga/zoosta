@@ -36,6 +36,7 @@ function App() {
           <Route path="/Post" element={<Post/>}/>
           <Route path="/Profile" element={<Profile/>}/>
         </Routes>
+<<<<<<< HEAD
        
         <Footer/>
 =======
@@ -47,6 +48,8 @@ function App() {
 =======
         <Footer/>
 >>>>>>> efdc940 (fixed errors added footer)
+=======
+>>>>>>> bf10324 (styled homepage)
       </Router>
    </div>
   );
