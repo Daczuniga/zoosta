@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 .App {
   text-align: center;
 }
@@ -69,3 +70,13 @@ margin-bottom: 3em;
 position:sticky;
 }*/
 >>>>>>> b58790d (add files to src, change home image, modify style)
+=======
+.App {
+  text-align: center;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+>>>>>>> 8895c6a (create routes for pages, update client-pages and styles)
