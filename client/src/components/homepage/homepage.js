@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -160,3 +161,20 @@ function homepage() {
   );
 }
 export default homepage;
+=======
+import React from "react"
+import "./homepage.css"
+
+const homepage=()=> {
+    const initialText = 'Where would you like to go?';
+
+    return (
+    <div>
+      <input type="text" value={initialText} />
+    </div>
+  );
+
+};
+
+export default homepage
+>>>>>>> 8dc1288 (merge conflict)

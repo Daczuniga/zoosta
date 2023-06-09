@@ -37,7 +37,10 @@ function App() {
           <Route path="/Profile" element={<Profile/>}/>
         </Routes>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 8dc1288 (merge conflict)
        
         <Footer/>
 =======
@@ -52,7 +55,12 @@ function App() {
 =======
         <Footer/>
 >>>>>>> efdc940 (fixed errors added footer)
+<<<<<<< HEAD
 >>>>>>> f95ebd7 (merge conflict)
+=======
+=======
+>>>>>>> bf10324 (styled homepage)
+>>>>>>> 8dc1288 (merge conflict)
       </Router>
    </div>
   );

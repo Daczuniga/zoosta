@@ -70,6 +70,7 @@ function Post() {
                     <p className='summary'>
                         I was out with friends on the weekend when we happened to stumble across this cool speakeasy!
                         I was among the neighborhod, so who wouldve guessed this was here! Definetly will be coming back the drinks were expensive, but definitely worth it
+<<<<<<< HEAD
 =======
             <div class="bubble">
                 <div className="image">
@@ -89,6 +90,8 @@ function Post() {
                         aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
                         aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaah
 >>>>>>> 1811be5 (merge conflict)
+=======
+>>>>>>> 8dc1288 (merge conflict)
                         
                     </p>
                 </div>
