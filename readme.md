@@ -59,12 +59,15 @@ Enrique Sanchez- esanchez8k@gmail.com - [esanchez8k](https://github.com/esanchez
 
 Olivia Nitzel - olivianitzel@gmail.com - [Olivianit](https://github.com/Olivianit)
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ## Mock-Up
 Screenshots of application:
 =======
 a
 >>>>>>> b378f20 (Added readme information)
+=======
+>>>>>>> 49c0570 (Removed typo in readme)
 
 ![screen shot]()
 ![screen shot]()
