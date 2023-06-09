@@ -15,8 +15,13 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
+<<<<<<< HEAD
 import Navbar from './components/Navbar';
 >>>>>>> 8895c6a (create routes for pages, update client-pages and styles)
+=======
+import Navbar from './components/NavBar';
+import Footer from './components/Footer';
+>>>>>>> efdc940 (fixed errors added footer)
 function App() {
   return (
    <div className="App">
@@ -39,8 +44,15 @@ function App() {
           <Route path="/Login" element={<Login/>}/>
           <Route path="/SignUp" element={<SignUp/>}/>
         </Routes>
+<<<<<<< HEAD
 >>>>>>> 8895c6a (create routes for pages, update client-pages and styles)
+<<<<<<< HEAD
 >>>>>>> f101d3d (merge conflict)
+=======
+=======
+        <Footer/>
+>>>>>>> efdc940 (fixed errors added footer)
+>>>>>>> f95ebd7 (merge conflict)
       </Router>
    </div>
   );
