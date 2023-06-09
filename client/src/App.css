@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 .App {
   text-align: center;
 }
@@ -8,7 +7,6 @@ body {
   padding: 0;
   margin: 0;
 }
-=======
 main {
   padding: 10px;
   max-width: 800px;
@@ -69,8 +67,6 @@ border-color: transparent transparent transparent #ea5d5a;
 margin-bottom: 3em;
 position:sticky;
 }*/
->>>>>>> b58790d (add files to src, change home image, modify style)
-=======
 .App {
   text-align: center;
 }
@@ -79,4 +75,4 @@ body {
   padding: 0;
   margin: 0;
 }
->>>>>>> 8895c6a (create routes for pages, update client-pages and styles)
+
