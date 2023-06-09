@@ -1,8 +1,16 @@
+<<<<<<< HEAD
 /* .post {
     display: flex;
     align-items: flex-start;
     margin-bottom: 20px;
   } */
+=======
+.post {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+>>>>>>> 1811be5 (merge conflict)
   
   .post .bubble {
     background-color: #f2f2f2;
@@ -28,8 +36,11 @@
 
   
   .post {
+<<<<<<< HEAD
     /* display: flex;
     align-items: flex-start; */
+=======
+>>>>>>> 1811be5 (merge conflict)
     display:grid;
     grid-template-columns: .5fr .9fr;
     gap:20px;
@@ -95,4 +106,8 @@
     .post .texts p {
         justify-content:center;
     }
+<<<<<<< HEAD
   } 
+=======
+  } 
+>>>>>>> 1811be5 (merge conflict)
