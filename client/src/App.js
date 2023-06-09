@@ -21,8 +21,6 @@ function App() {
           <Route path="/Post" element={<Post/>}/>
           <Route path="/Profile" element={<Profile/>}/>
         </Routes>
-       
-        <Footer/>
       </Router>
    </div>
   );

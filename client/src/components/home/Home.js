@@ -1,7 +1,6 @@
 import React from "react";
 import "./Home.css";
-import Logo from "../../assets/logo_official.png";
-import videoLogo from "../../assets/zoosta_1.mp4"
+import Logo from "../../assets/logo_official.jpeg";
 
 
 function Home() {
