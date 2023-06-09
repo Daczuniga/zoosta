@@ -58,9 +58,13 @@ Ohmarx Paniagua - marxhop@hotmail.com - [Ohmarxp](https://github.com/Ohmarxp)
 Enrique Sanchez- esanchez8k@gmail.com - [esanchez8k](https://github.com/esanchez8k)
 
 Olivia Nitzel - olivianitzel@gmail.com - [Olivianit](https://github.com/Olivianit)
+<<<<<<< HEAD
 
 ## Mock-Up
 Screenshots of application:
+=======
+a
+>>>>>>> b378f20 (Added readme information)
 
 ![screen shot]()
 ![screen shot]()
