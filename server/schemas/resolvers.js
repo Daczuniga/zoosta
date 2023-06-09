@@ -41,6 +41,15 @@ const resolvers = {
       }
       throw new AuthenticationError('You need to be logged in!');
     },
+
+    
+    //Like comment 
+
+
+    //SignOut 
+
+
+
     removeComment: async (parent, { commentId }, context) => {
       if (context.user) {
         const updatedUser = await User.findOneAndUpdate(
