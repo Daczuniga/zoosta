@@ -1,11 +1,40 @@
 .post {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .post .bubble {
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    padding: 10px;
+    margin-right: 10px;
+    max-width: 70%;
+  }
+  
+  .post h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  
+  .post p {
+    margin-bottom: 10px;
+  }
+  
+  .post .author {
+    font-style: italic;
+    color: #888;
+  }
+
+  
+  .post {
     display:grid;
     grid-template-columns: .5fr .9fr;
     gap:20px;
     margin: 80px;
-    /* display: flex;
+    display: flex;
     flex-direction:column;
-    justify-content: space-between; */
+    justify-content: space-between;
 }
 
 .post .image img {
@@ -64,4 +93,4 @@
     .post .texts p {
         justify-content:center;
     }
-  }
+  } 
