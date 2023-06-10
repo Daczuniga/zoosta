@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import Logo from "../../assets/zoosta2.png";
+import Logo from "../../assets/logo_official.jpeg";
 
 
 function Home() {
@@ -10,11 +10,12 @@ function Home() {
       <div className="Logo">
         <img src={Logo} alt="logo" />
       </div>
+
       <div className="logBar">
-        <a className="signup" href="/SignUp">
-          Sign Up
-        </a>
-        <a className="login" href="Login">
+        <a className="button-52" role="button" href="/SignUp">
+          Sign up
+          </a>
+        <a className="button-52" role="button" href="Login">
           Login
         </a>
       </div>

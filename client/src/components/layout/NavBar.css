@@ -16,6 +16,8 @@ color: rgb(238, 153, 153);
 text-decoration: none;
 margin: 20px;
 font-size: 20px;
+font-weight: bold;
+font-family: Futura, Tahoma, sans-serif;
 }
 
 .toggleButton {
