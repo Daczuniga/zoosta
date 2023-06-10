@@ -30,6 +30,7 @@ const resolvers = {
       return { token, user };
     },
     //move to saveComment
+
     // saveComment: async (parent, { commentData }, context) => {
     //   if (context.user) {
     //     const updatedUser = await User.findByIdAndUpdate(
@@ -41,6 +42,16 @@ const resolvers = {
     //   }
     //   throw new AuthenticationError('You need to be logged in!');
     // },
+
+   
+    //Like comment 
+
+
+    //SignOut 
+
+
+
+
     removeComment: async (parent, { commentId }, context) => {
       if (context.user) {
         const updatedUser = await User.findOneAndUpdate(
