@@ -1,4 +1,4 @@
-const typeDefs = require('./typeDefs');
-const resolvers = require('./resolvers');
+const User= require ("./user");
+const {Comment}= require ("./comment")
 
-module.exports = { typeDefs, resolvers };
+module.exports = { User, Comment};
