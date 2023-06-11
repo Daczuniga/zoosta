@@ -1,11 +1,17 @@
 import React from 'react';
 import './Post.css';
 import Picture from '../../assets/zoosta1.png';
+import { useMutation } from '@apollo/client';
 import creek1 from '../../assets/creek1.webp';
 import cuteBar from '../../assets/cute_bar.jpeg';
 
 
-function Post() {
+
+export default function Post() {
+
+
+
+    
     return (
         <div className="post">
             <div className= "bubble">
@@ -53,4 +59,3 @@ function Post() {
     </div>
     )
 }
-export default Post;
