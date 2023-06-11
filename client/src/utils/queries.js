@@ -9,6 +9,8 @@ const QUERY_ME = gql`
         comment
         description
       }
+      
+      }
     }
   }
 `

@@ -1,9 +1,14 @@
 import React from 'react';
 import './Post.css';
 import Picture from '../../assets/zoosta1.png';
+import { useMutation } from '@apollo/client';
 
 
-function Post() {
+export default function Post() {
+
+
+
+    
     return (
         <div className="post">
         <div className="image">
@@ -47,4 +52,3 @@ function Post() {
     </div>
     )
 }
-export default Post;
