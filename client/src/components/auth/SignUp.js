@@ -5,6 +5,7 @@ import { ADD_USER } from "../../utils/mutations";
 import Auth from "../../utils/auth";
 
 export default function SignUp() {
+
   const [userFormData, setUserFormData] = useState({
     username: "",
     email: "",
@@ -60,4 +61,5 @@ export default function SignUp() {
       <button className="button" type="submit">Sign Up</button>
     </form>
   );
+
 }
