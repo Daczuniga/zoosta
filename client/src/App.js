@@ -13,7 +13,6 @@ import {
   ApolloProvider,
   createHttpLink,
 } from '@apollo/client';
-
 import { setContext } from '@apollo/client/link/context';
 
 const httpLink = createHttpLink({
@@ -38,10 +37,6 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-
-
-
-
 function App() {
   return (
    <div className="App">
@@ -49,7 +44,7 @@ function App() {
     <Router>
         <Navbar/>
         <Routes>
-          <Route path="/Home" element={<Home/>}/>
+          <Route index="/" element={<Home/>}/>
           {/* <Route path="/Google" element={<Google/>}/> */}
           <Route path="/Login" element={<Login/>}/>
           <Route path="/SignUp" element={<SignUp/>}/>
@@ -60,7 +55,6 @@ function App() {
       </Router>
     </ApolloProvider>
    </div>
-
   );
 }
 
