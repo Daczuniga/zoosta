@@ -30,24 +30,66 @@ const resolvers = {
       return { token, user };
     },
     //move to saveComment
-    saveComment: async (parent, { commentData }, context) => {
+    // saveComment: async (parent, { commentData }, context) => {
+    //   if (context.user) {
+    //     const updatedUser = await User.findByIdAndUpdate(
+    //       { _id: context.user._id },
+    //       { $push: { savedComments: commentData } },
+    //       { new: true }
+    //     );
+    //     return updatedUser;
+    //   }
+    //   throw new AuthenticationError('You need to be logged in!');
+    // },
+
+    
+    //Like comment *************   MUST TEST BEFORE PUSH   **************
+
+    likeComment: async (parent, { commentId }, context) => {
       if (context.user) {
-        const updatedUser = await User.findByIdAndUpdate(
-          { _id: context.user._id },
-          { $push: { savedComments: commentData } },
-          { new: true }
-        );
-        return updatedUser;
+        try {
+          // Find the user and check if the comment is already liked
+          const user = await User.findById(context.user._id);
+          const isLiked = user.savedComments.includes(commentId);
+    
+          // Update the user's liked comments based on the presence of the commentId
+          if (isLiked) {
+            // If the comment is already liked, remove it from the savedComments array
+          //   user.savedComments = user.savedComments.filter(id => id !== commentId);
+          // } else {
+          //   // If the comment is not liked, add it to the savedComments array
+          //   user.savedComments.push(commentId);
+          }
+    
+          // Save the updated user data
+          const updatedUser = await user.save();
+          return updatedUser;
+        } catch (error) {
+          throw new Error('Something went wrong while liking the comment');
+        }
       }
       throw new AuthenticationError('You need to be logged in!');
     },
-
     
-    //Like comment 
 
-
-    //SignOut 
-
+    //SignOut   ********************  MUST TEST BEFORE PUSH  *******************
+   
+   
+   //             *************PULLED FROM CHATGPT*******************
+    // const signOut = {
+    //   Mutation: {
+    //     logout: (parent, args, context) => {
+    //       if (context.user) {
+    //         // Perform any necessary actions to log out the user
+    //         // For example, clearing the authentication token or session
+    
+    //         // Return a success message or boolean indicating successful logout
+    //         return true;
+    //       }
+    //       throw new AuthenticationError('You need to be logged in!');
+    //     },
+    //   },
+    // },
 
 
     removeComment: async (parent, { commentId }, context) => {
