@@ -30,6 +30,7 @@
   .post {
     /* display: flex;
     align-items: flex-start; */
+    padding-bottom:2rem; 
     display:grid;
     grid-template-columns: .5fr .9fr;
     gap:20px;
