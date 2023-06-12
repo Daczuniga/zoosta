@@ -4,10 +4,11 @@ const typeDefs = gql`
     _id: ID!
     username: String!
     email: String
+    comments: [Comments]
     savedComments: [Comments]
   }
   type Comments {
-    commentId: ID!
+    _id: ID!
     commentText: String
   }
   type Auth {
@@ -15,8 +16,7 @@ const typeDefs = gql`
     user: User
   }
   input CommentInput {
-    text: [String]
-    commentId: String!
+   commentText: String!
   }
   type Query {
     me: User
@@ -24,9 +24,18 @@ const typeDefs = gql`
   type Mutation {
     login(email: String!, password: String!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
+    addComment(commentData: CommentInput!): Comments
     saveComments(commentData: CommentInput!): User
     removeComment(commentId: ID!): User
   }
 `;
 module.exports = typeDefs;
+
+
+
+
+
+
+
+
 

@@ -33,12 +33,29 @@ const resolvers = {
       console.log(token)
       return { token, user };
     },
-    
-    saveComments: async (parent, { commentData }, context) => {
+
+ 
+    addComment: async (parent, { commentData }, context) => {
       if (context.user) {
-        const updatedUser = await User.findByIdAndUpdate(
+        // Create a new comment and associate it with the user
+        const comment = await Comment.create(commentData);
+        const updatedUser = await User.findOneAndUpdate(
           { _id: context.user._id },
-          { $push: { savedComments: commentData } },
+          { $push: { comments: comment._id } },
+          { new: true }
+        );
+
+        return comment;
+      }
+      throw new AuthenticationError('You need to be logged in!');
+    },
+
+    saveComments: async (parent, { commentIds }, context) => {
+      if (context.user) {
+        // Save the specified comments to the user's profile
+        const updatedUser = await User.findOneAndUpdate(
+          { _id: context.user._id },
+          { $push: { savedComments: { $each: commentIds } } },
           { new: true }
         );
         return updatedUser;
@@ -62,3 +79,24 @@ const resolvers = {
 
 
 module.exports = resolvers;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

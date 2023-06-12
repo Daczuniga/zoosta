@@ -4,6 +4,8 @@ import Picture from '../../assets/zoosta1.png';
 import { useMutation } from '@apollo/client';
 import creek1 from '../../assets/creek1.webp';
 import cuteBar from '../../assets/cute_bar.jpeg';
+import ProfilePosts from '../profile/profilePosts';
+import Map from './Map.js';
 
 
 
@@ -35,6 +37,12 @@ export default function Post() {
                 </div>
             </div>
         </div>
+        <div>
+        <Map/> 
+        </div>
+        <br/>
+        <br/>
+        <ProfilePosts/>
         <div className="post">
             <div className="bubble">
                 <div className="image">
@@ -56,6 +64,12 @@ export default function Post() {
                 </div>
             </div>
         </div>
+        <div>
+        <Map/>
+        </div>
+        <br/>
+        <br/>
+        <ProfilePosts/>
     </div>
     )
 }

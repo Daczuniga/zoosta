@@ -56,3 +56,12 @@ commentSchema.virtual('reactionCount').get(function () {
   });
 
 module.exports = {Comment, Reaction};
+
+
+
+
+
+
+
+
+
