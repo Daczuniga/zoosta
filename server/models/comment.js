@@ -51,8 +51,17 @@ const commentSchema = new mongoose.Schema({
 const Comment = mongoose.model("Comment", commentSchema);
 const Reaction = mongoose.model("Reaction", reactionSchema);
 
-postSchema.virtual('reactionCount').get(function () {
+commentSchema.virtual('reactionCount').get(function () {
     return this.reactions.length;
   });
 
 module.exports = {Comment, Reaction};
+
+
+
+
+
+
+
+
+

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ProfileHeader from './profileHeader';
-import ProfilePosts from './profilePosts';
 import "./profile.css"
+
 
 
 
@@ -16,9 +16,8 @@ const Profile = () => {
   }, []);
 
   return (
-    <div>
+    <div className="profile-container">
       <ProfileHeader  />
-      <ProfilePosts />
     </div>
   );
 };

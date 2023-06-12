@@ -15,9 +15,8 @@ The purpose of "Zoosta" is to give users a genuine unbiased review along with an
   - [License](#license)
   - [Contribution Guidelines](#contributing)
   - [Tests](#tests)
-  - [Questions](#Questions)
-  - [Contact Me](#ContactInfo)
-  - [Mock-up](#Mock-up)
+  - [Contact Info](#questions)
+  - [Mock-up](#mock-up)
   
 ## Installation
 
@@ -44,9 +43,6 @@ To test, you must ensure the app is deployable with the provided Heroku link and
 ## Questions
 If you have any questions, please use the Developers' contact information below: 
 
-## ContactInfo
-   Developer's contact information: Name , Email , Github Account Link 
-
 Daniel Cruz - danielcruz.34776@gmail.com - [Daczuniga](https://github.com/DACZuniga)
 
 Aya Effoua - carineeffoua@gmail.com - [aeffoua](https://github.com/aeffoua)
@@ -58,19 +54,12 @@ Ohmarx Paniagua - marxhop@hotmail.com - [Ohmarxp](https://github.com/Ohmarxp)
 Enrique Sanchez- esanchez8k@gmail.com - [esanchez8k](https://github.com/esanchez8k)
 
 Olivia Nitzel - olivianitzel@gmail.com - [Olivianit](https://github.com/Olivianit)
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 ## Mock-Up
 Screenshots of application:
-=======
-a
->>>>>>> b378f20 (Added readme information)
-=======
->>>>>>> 49c0570 (Removed typo in readme)
 
-![screen shot]()
-![screen shot]()
-![screen shot]()
-![screen shot]()
+![screen shot](./client/src/assets/homepage.jpeg)
+![screen shot](./client/src/assets/post1.jpeg)
+![screen shot](./client/src/assets/post2.jpeg)
+![screen shot](./client/src/assets/profile.jpeg)
 
