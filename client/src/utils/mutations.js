@@ -26,30 +26,35 @@ export const ADD_USER = gql`
 `;
 
 export const ADD_COMMENT = gql`
-  mutation saveComment($input: commentInput) {
-    saveComment(input: $input) {
-      
+  mutation addComment($commentData: CommentInput!) {
+    addComment(commentData: $commentData) {
+      _id
+      commentText
+    }
+  }
+`;
+
+export const REMOVE_COMMENT = gql`
+  mutation removeComment($commentId: ID!) {
+    removeComment(commentId: $commentId) {
       _id
       username
       savedComments {
         commentText
-        date
-        
+        commentId
       }
     }
   }
 `;
 
-export const REMOVE_Comment = gql`
-  mutation removecOMMENT($commentId: String!) {
-    removeBook(bookId: $commentId) {
-      _id
-      username
-      bookCount
-      savedComments {
-       commentText
-       date
-      }
-    }
-  }
-`;
+
+
+
+
+
+
+
+
+
+
+

@@ -44,7 +44,7 @@ function App() {
     <Router>
         <Navbar/>
         <Routes>
-          <Route index="/" element={<Home/>}/>
+          <Route path="/Home" element={<Home/>}/>
           {/* <Route path="/Google" element={<Google/>}/> */}
           <Route path="/Login" element={<Login/>}/>
           <Route path="/SignUp" element={<SignUp/>}/>
