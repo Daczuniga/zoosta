@@ -21,11 +21,17 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
+    comments:[
+      
+    ],
+    
+    
     // set savedBooks to be an array of data that adheres to the bookSchema
 
   },
   // set this to use virtual below
   {
+    timestamps: true,
     toJSON: {
       virtuals: true,
     },

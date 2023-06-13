@@ -15,7 +15,7 @@ function Home() {
         <a className="button-52" role="button" href="/SignUp">
           Sign up
           </a>
-        <a className="button-52" role="button" href="Login">
+        <a className="button-52" role="button" href="/Login">
           Login
         </a>
       </div>

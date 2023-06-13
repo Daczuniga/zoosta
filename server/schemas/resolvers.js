@@ -51,6 +51,17 @@ const resolvers = {
 
     likeComment: async (parent, { commentId }, context) => {
       if (context.user) {
+
+        // Create a new comment and associate it with the user
+        const comment = await Comment.create(commentData);
+        const updatedUser = await User.findOneAndUpdate(
+          { _id: context.user._id },
+          { $push: { comments: {_id: comment._id, commentText: comment.commentText }} },
+          { new: true }
+        );
+
+        return comment;
+
         try {
           // Find the user and check if the comment is already liked
           const user = await User.findById(context.user._id);
@@ -71,6 +82,7 @@ const resolvers = {
         } catch (error) {
           throw new Error('Something went wrong while liking the comment');
         }
+
       }
       throw new AuthenticationError('You need to be logged in!');
     },
