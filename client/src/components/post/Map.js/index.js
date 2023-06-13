@@ -60,8 +60,8 @@ const Map = () => {
       </GoogleMapReact>
 
       <form onSubmit={handleFormSubmit}>
-        <input type="text" name="lat" placeholder="Latitude"  />
-        <input type="text" name="lng" placeholder="Longitude"  />
+        <input type="text" name="lat" placeholder="Latitude" />
+        <input type="text" name="lng" placeholder="Longitude" />
         <button type="submit">Add Marker</button>
       </form>
     </div>

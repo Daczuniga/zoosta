@@ -6,10 +6,8 @@ export const QUERY_ME = gql`
       _id
       username
       email
-      savedComments {
-        _id
-        commentText
-      }
+    
+
       comments {
         _id
         commentText
