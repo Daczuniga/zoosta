@@ -41,7 +41,7 @@ const resolvers = {
         const comment = await Comment.create(commentData);
         const updatedUser = await User.findOneAndUpdate(
           { _id: context.user._id },
-          { $push: { comments: comment._id } },
+          { $push: { comments: {_id: comment._id, commentText: comment.commentText }} },
           { new: true }
         );
 
