@@ -24,7 +24,7 @@ function Navbar() {
             </div>
             <div className='links'>
                 <Link to='/Home'>Home</Link>
-                <Link to='/Post'>Post</Link>
+                {/* <Link to='/Post'>Post</Link> */}
                 <Link to='/Profile'>Profile</Link>
             </div>
         </div>

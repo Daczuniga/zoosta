@@ -31,8 +31,18 @@ export const ADD_COMMENT = gql`
       _id
       commentText
     }
+
   }
+
 `;
+export const GET_ALL_COMMENTS = gql `
+  query getAllComments {
+    comments {
+      _id
+      commentText
+    }
+  }`
+;
 
 export const REMOVE_COMMENT = gql`
   mutation removeComment($commentId: ID!) {

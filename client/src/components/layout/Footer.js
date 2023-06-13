@@ -1,16 +1,16 @@
 import './Footer.css'
-import {Button} from '@material-ui/core'
+
 
 
 
 
 function Footer(){
 return (
-    <div>
+    <div className='footer'>
         <h1 className='footer-text'>
-            This is my Footer
+            Made with &#10084; by Zoosta
         </h1>
-        <Button variant='outlined'>Click me</Button>
+        
     </div>
 )
 }

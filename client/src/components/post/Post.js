@@ -1,75 +1,111 @@
-import React from 'react';
-import './Post.css';
-import Picture from '../../assets/zoosta1.png';
-import { useMutation } from '@apollo/client';
-import creek1 from '../../assets/creek1.webp';
-import cuteBar from '../../assets/cute_bar.jpeg';
-import ProfilePosts from '../profile/profilePosts';
-import Map from './Map.js';
+import React, { useState, useEffect } from "react";
+import "./Post.css";
+import Picture from "../../assets/zoosta_1.mp4";
+import creek1 from "../../assets/creek1.webp";
 
-
+import { useMutation, useQuery } from "@apollo/client";
+import { ADD_COMMENT, GET_ALL_COMMENTS } from "../../utils/mutations";
+import ProfilePosts from "../profile/profilePosts";
+import Map from "./Map.js";
+import { QUERY_ME } from "../../utils/queries";
 
 export default function Post() {
+  const [commentData, setCommentData] = useState({
+    commentText: "",
+  });
+  const [addComment, { error }] = useMutation(ADD_COMMENT);
+  const { loading, data } = useQuery(QUERY_ME);
+  useEffect(() => {
+    if (error) {
+      console.log(error);
+    }
+  }, [error]);
+  if (loading) {
+    return <p>Loading...</p>;
+  }
 
+  const { comments,username, createdAt } = data.me || {};
+  console.log(data)
 
+  const handleInputChange = (event) => {
+    const { name, value } = event.target;
+    setCommentData({ ...commentData, [name]: value });
+  };
 
-    
-    return (
-        <div className="post">
-            <div className= "bubble">
-                <div className="image">
-                        <img src={creek1} alt="foto"/>
-                <div className='texts'>
-                    <h2>
-                        Cute Hidden Creek Near Park Trail!
-                    </h2>
-                    <p className='info'>
-                        <a className='author'>Henry Smith</a>
-                        <time>2023-06-05 14:57</time>
-                    </p>
-                    <p className='summary'>
-                        
-                        I walking on the park trail when I went off-trail half a mile in and found this beautiful creek!
+  const handleFormSubmit = async (event) => {
+    event.preventDefault();
 
-                        It is near the fallen tree by the painted bridge! highly recommend :)
-                        
-                    </p>
-                </div>
+    // check if form has everything (as per react-bootstrap docs)
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+
+    try {
+      const { data } = await addComment({
+        variables: { commentData },
+        refetchQueries: [{ query:  QUERY_ME }], // Pour rafraîchir les commentaires après l'ajout d'un nouveau commentaire
+      });
+      console.log("test data");
+      console.log(data);
+    } catch (err) {
+      console.error(err);
+    }
+
+    setCommentData({
+      commentText: "",
+    });
+  };
+
+  return (
+    <div className="post-area">
+      <div className="create-post">
+        <div className="form-post">
+          <form onSubmit={handleFormSubmit}>
+            <div>New post</div>
+            <div>
+              <textarea
+                name="commentText"
+                cols="30"
+                rows="10"
+                onChange={handleInputChange}
+                value={commentData.commentText} // Ajout de la valeur du champ de texte du commentaire
+                required
+              ></textarea>
             </div>
+            <div>
+              <button type="submit">Send Post</button>
+            </div>
+          </form>
         </div>
-        <div>
-        <Map/> 
-        </div>
-        <br/>
-        <br/>
-        <ProfilePosts/>
-        <div className="post">
+      </div>
+      {comments && comments.length > 0 ? (
+        comments.map((comment) => (
+          <div className="post" key={comment._id}>
             <div className="bubble">
-                <div className="image">
-                    <img src={cuteBar} alt="foto"/>
-                </div>
-                <div className='texts'>
-                <h2>
-                        Awesome New Bar @ State Street!
-                    </h2>
-                    <p className='info'>
-                        <a className='author'>Elizabeth Gonzalez</a>
-                        <time>2023-06-05 14:57</time>
-                    </p>
-                    <p className='summary'>
-                        I was out with friends on the weekend when we happened to stumble across this cool speakeasy!
-                        I was among the neighborhod, so who wouldve guessed this was here! Definetly will be coming back the drinks were expensive, but definitely worth it
-                        
-                    </p>
-                </div>
+              <div className="image">
+                <img src='https://picsum.photos/200/100' alt="foto" />
+              </div>
+
+              <div className="texts" >
+                <h2>{comment.commentText}</h2>
+                <p className="info">
+                  <a className="author">{username}</a>
+                  <time>{createdAt}</time>
+                </p>
+                
+              </div>
             </div>
-        </div>
-        <div>
-        <Map/>
-        </div>
-        <br/>
-        <br/>
-        <ProfilePosts/>
+            <div>
+              <Map />
+            </div>
+          </div>
+        ))
+      ) : (
+        <p>No comments found.</p>
+      )}
+
     </div>
-    )
+    );
 }
