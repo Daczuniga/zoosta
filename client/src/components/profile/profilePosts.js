@@ -1,83 +1,119 @@
-import React, {  useState } from "react";
-import "./profileHeader";
-import { ADD_COMMENT } from "../../utils/mutations";
-import {useQuery, useMutation} from "@apollo/client";
-import {QUERY_ME} from '../../utils/queries';
-import Auth from '../../utils/auth';
+import React, { useState } from 'react';
 
-const ProfilePosts = () => {
-  const { loading, data } = useQuery(QUERY_ME);
-  const [commentText, setCommentText] = useState(""); // State for the comment input
-  const [commentData, setCommentData] = useState([])
-  const [addComment, { error }] = useMutation(ADD_COMMENT);
-  console.log(commentData)
-  console.log({error})
-  const userData = data?.me || {}; 
-  console.log(userData, "this")
-  const handleCommentSubmit = async (e) => {
-    e.preventDefault();
+const ProfilePost = () => {
+  const [posts, setPosts] = useState([]);
+  const [newPost, setNewPost] = useState({
+    title: '',
+    subHeading: '',
+    text: '',
+  });
 
-    const token = Auth.loggedIn() ? Auth.getToken() : null;
-    
-    if (!token){
-      return false;
+  const handleInputChange = (e) => {
+    setNewPost({ ...newPost, [e.target.name]: e.target.value });
+  };
+
+  const handleCreatePost = () => {
+    if (newPost.title && newPost.subHeading && newPost.text) {
+      const postId = posts.length + 1;
+      const post = {
+        id: postId,
+        title: newPost.title,
+        subHeading: newPost.subHeading,
+        text: newPost.text,
+        likes: 0,
+        comments: [],
+      };
+
+      setPosts([...posts, post]);
+      setNewPost({ title: '', subHeading: '', text: '' });
     }
-    
-  
-    try {
-      const { data } = await addComment({
-        variables: {
-          commentData: {
-            commentText: commentText,
-          },
-        },
-      });
-  
-      setCommentData((prevData) => [...prevData, data.addComment]);
-      setCommentText("");
-    } catch (error) {
-      console.log(error);
-    }
+  };
+
+  const handleLikePost = (postId) => {
+    const updatedPosts = posts.map((post) => {
+      if (post.id === postId) {
+        return { ...post, likes: post.likes + 1 };
+      }
+      return post;
+    });
+
+    setPosts(updatedPosts);
+  };
+
+  const handleAddComment = (postId, comment) => {
+    const updatedPosts = posts.map((post) => {
+      if (post.id === postId) {
+        return { ...post, comments: [...post.comments, comment] };
+      }
+      return post;
+    });
+
+    setPosts(updatedPosts);
   };
   
   if (loading) {
     return <h2>LOADING....</h2>
   }
   return (
-    <div className="box">
-      <h1>Leave A Comment</h1>
-      <form onSubmit={handleCommentSubmit}>
+    <div>
+      {/* Render existing posts */}
+      {posts.map((post) => (
+        <div
+          key={post.id}
+          className="post"
+          style={{
+            backgroundImage:
+              "url('https://www.pngkit.com/png/detail/915-9159431_speechbubble-bubble-pixel-thoughbubble-pixelated-monochrome.png')",
+          }}
+        >
+          <h2 className="post-title">{post.title}</h2>
+          <h3 className="post-subheading">{post.subHeading}</h3>
+          <p className="post-text">{post.text}</p>
+          <div className="post-actions">
+            <button
+              className="like-button"
+              onClick={() => handleLikePost(post.id)}
+            >
+              Like ({post.likes})
+            </button>
+            <button className="comment-button">Comment</button>
+            {/* Render comments */}
+            <ul className="comment-list">
+              {post.comments.map((comment, index) => (
+                <li key={index}>{comment}</li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      ))}
+
+      {/* Create new post */}
+      <div>
+        <h2>Create New Post</h2>
         <input
           type="text"
-          value={commentText}
-          onChange={(e) => setCommentText(e.target.value)}
-          placeholder="Enter your comment"
+          name="title"
+          value={newPost.title}
+          placeholder="Title"
+          onChange={handleInputChange}
         />
-        <button type="submit">Add Comment</button>
-      </form>
-      <table className="list">
-        <tbody>
-          {commentData.map((comment, index) => {
-            return (
-              <tr className="list" key={index}>               
-                <td className="sb3">{comment.commentText}</td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
+        <input
+          type="text"
+          name="subHeading"
+          value={newPost.subHeading}
+          placeholder="Subheading"
+          onChange={handleInputChange}
+        />
+        <textarea
+          name="text"
+          value={newPost.text}
+          placeholder="Text"
+          onChange={handleInputChange}
+        ></textarea>
+        <button onClick={handleCreatePost}>Create Post</button>
+      </div>
     </div>
   );
 };
 
-export default ProfilePosts;
-
-
-
-
-
-
-
-
-
-
+export default ProfilePost;
